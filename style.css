@@ -6,3 +6,6 @@
 body{
 	background: linear-gradient(to bottom, #16A085, #F4D03F);
 }
+#fork-button{
+	width: 500px;
+}
