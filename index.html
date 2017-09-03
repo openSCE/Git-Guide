@@ -120,7 +120,7 @@
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to initialize  git for a repository?</div>
 						<div class="collapsible-body"><span>Git is always initialized in a folder. A hidden file ".git" is created which contains info about commits and other important things.
 
-							<blockquote>test@test-HP-Notebook:~$ git init</blockquote>	
+							<blockquote>opensce@opensce-HP-Notebook:~$ git init</blockquote>	
 
 						</span></div>
 						sdas
@@ -128,9 +128,9 @@
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to add "changed file" for commit stage?</div>
 						<div class="collapsible-body"><span>To add untracked files to commit stage:-
-						<blockquote>test@test-HP-Notebook:~$ git add .</blockquote>
+						<blockquote>opensce@opensce-HP-Notebook:~$ git add .</blockquote>
 						If some files are deleted then do:-
-						<blockquote>test@test-HP-Notebook:~$ git add --all</blockquote>	
+						<blockquote>opensce@opensce-HP-Notebook:~$ git add --all</blockquote>	
 						</span></div>
 					</li>
 					<li>
@@ -140,32 +140,38 @@
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to commit?</div>
 						<div class="collapsible-body"><span>To commit the tracked files enter the following command into the terminal:-
-						<blockquote>test@test-HP-Notebook:~$ git commit -m "Your commit message"</blockquote>
+						<blockquote>opensce@opensce-HP-Notebook:~$ git commit -m "Your commit message"</blockquote>
 						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to commit which directly reference to an issue and closes that issue?</div>
 						<div class="collapsible-body"><span>To close an issue with a commit enter the following command:-
-						<blockquote>test@test-HP-Notebook:~$ git commit -m "Your commit message closes #1"</blockquote>	
+						<blockquote>opensce@opensce-HP-Notebook:~$ git commit -m "Your commit message closes #1"</blockquote>	
 						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to change commit message?</div>
 						<div class="collapsible-body"><span>To change commit message type the following into terminal:-
-							<blockquote>test@test-HP-Notebook:~$ git commit --amend</blockquote>
+							<blockquote>opensce@opensce-HP-Notebook:~$ git commit --amend</blockquote>
 						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>Checking all the commits</div>
-						<div class="collapsible-body"><span>Dummy data</span></div>
+						<div class="collapsible-body"><span>To check all the commits:-
+							<blockquote>opensce@opensce-HP-Notebook:~$ git log</blockquote></span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>Going to a particular commit to see the files at that commit</div>
-						<div class="collapsible-body"><span>Dummy data</span></div>
+						<div class="collapsible-body"><span>All the commits are available at "git log". A commit could be visited by:-
+							<blockquote>opensce@opensce-HP-Notebook:~$ git checkout "f6b2fe1b471aacd638abf42e7f0a48fab9d32114"</blockquote>
+							The above random string in quotes is a unique hash which is associated with every commit and is visible in "git log"
+						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to create branch</div>
-						<div class="collapsible-body"><span>Dummy data</span></div>
+						<div class="collapsible-body"><span>A branch can be created by:-
+							<blockquote>git checkout -b "branchname"</blockquote>
+						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>HOw to switch between different branch?</div>
