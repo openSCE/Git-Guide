@@ -123,7 +123,6 @@
 							<blockquote>opensce@opensce-HP-Notebook:~$ git init</blockquote>	
 
 						</span></div>
-						sdas
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to add "changed file" for commit stage?</div>
@@ -170,12 +169,13 @@
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to create branch</div>
 						<div class="collapsible-body"><span>A branch can be created by:-
-							<blockquote>git checkout -b "branchname"</blockquote>
+							<blockquote>opensce@opensce-HP-Notebook:~$ opensce@opensce-HP-Notebook:~git checkout -b "branchname"</blockquote>
 						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>HOw to switch between different branch?</div>
-						<div class="collapsible-body"><span>Dummy data</span></div>
+						<div class="collapsible-body"><span>We can switch into braches using:-
+							<blockquote>opensce@opensce-HP-Notebook:~$ git checkout "branchname"</blockquote></span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to push to a remote repository?</div>
@@ -191,7 +191,15 @@
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to merge different commits to make a one commit?</div>
-						<div class="collapsible-body"><span>Dummy data</span></div>
+						<div class="collapsible-body"><span>git rebase provides a simple way of combining multiple commits into a single one. However using rebase to squash an entire branch down to a single commit is not completely straightforward.
+							<blockquote>opensce@opensce-HP-Notebook:~$ git log --oneline 
+							</blockquote>
+							Suppose last 2 commits are:- c172641 and 24f5ad2
+							we can combine the last two commits (c172641 and 24f5ad2) by rebasing up to the first commit:
+							<blockquote>opensce@opensce-HP-Notebook:~$ git rebase -i 97c9d7d
+							</blockquote>
+
+						</span></div>
 					</li>
 					<li>
 						<div class="collapsible-header"><i class="material-icons">filter_drama</i>How to rebase commits of forked repository of one branch form another branch in same repository?</div>
