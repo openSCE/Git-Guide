@@ -4,20 +4,16 @@
 	<title>Gitguide</title>
 
 	<!-- Compiled and minified CSS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-	    <!-- Compiled and minified JavaScript -->
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script type="text/javascript" src="./script.js"></script>
 </head>
 <body class="container">
 	<h1 class="center-align">Git Guide</h1>
-
 	<ul class="collapsible popout" data-collapsible="expandable">
 		<li>
 			<div class="collapsible-header"><i class="material-icons">filter_drama</i>Starting with Git</div>
@@ -163,8 +159,58 @@
 							</div>
 						</li>
 						<li>
+							<div class="collapsible-header"><i class="material-icons">filter_drama</i>Adding name to a remote repository?</div>
+							<div class="collapsible-body">
+								<span>
+									You can also give name to any remote repository so that you don't have to write link to the remote repository . You can simply use name instead of that link.
+								</span>
+								<span>
+									For adding name to repository https://github.com/openSCE/Git-Guide write:
+								</span>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git remote add  < name >  < repository link >
+								</blockquote>
+								<span>
+									For Example :<br> Name given is guide, you can give name of your choice if you want, the only thing to keep in mind is that the name should not be already used in the current project as alias to any remote link <br>Repository link is https://github.com/openSCE/Git-Guide
+								</span>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git remote add guide https://github.com/openSCE/Git-Guide
+								</blockquote>
+								<span>
+									Now guide can be used instead of the link https://github.com/openSCE/Git-Guide.
+								</span>
+							</div>
+						</li>
+						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is pull?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body">
+								<span>
+									Git-pull - Fetch from and integrate with another repository or a local branch.
+								</span>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git pull < repository > < branch >
+								</blockquote>
+								Example:
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git pull https://github.com/openSCE/Git-Guide master
+								</blockquote>
+								<span>
+									In above case master represents the main branch whose name is master by-default.<br>
+									For using any other branch lets say for branch name "guide_branch" you can write :
+								</span>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git pull https://github.com/openSCE/Git-Guide guide_branch
+								</blockquote>
+								<span>
+									If any remote name to the remote repository is already given, lets say guide is the name given for remote repository https://github.com/openSCE/Git-Guide then following commands can be used.
+								</span>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git pull origin master
+								</blockquote>
+								<blockquote>
+									opensce@opensce-HP-Notebook:~$ git pull origin guide_branch
+								</blockquote>
+							</div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is push?</div>
