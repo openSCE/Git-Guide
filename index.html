@@ -202,23 +202,36 @@
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What are Tracked files?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body">
+								<span>Git has a concept known as 'the index'. To create a new commit, you fill the index with the contents you'd like to have in the next commit. That means that you have to explicitly tell Git which changes you want to appear in the next commit by using git add. (git add -p to add only single hunks)
+
+								It doesn't make a difference to Git whether you only update a file (»stage changes«) or if you add the full content of a new file (»start tracking a file«) – both times, all that Git's index sees is the addition of new changes
+								</span>
+							</div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What are Untracked files?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body"><span>The file is new, Git knows nothing about it. If you git add "fileName", it becomes tracked.</span></div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is commit?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body">
+								<span>
+									A commit, or "revision", is an individual change to a file (or set of files). It's like when you save a file, except with Git, every time you save it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of what changes were made when and by who. 
+								</span>
+							</div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is commit message?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body">
+								<span>
+									Commits usually contain a commit message which is a brief description of what changes were made.
+								</span>
+							</div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is master?</div>
-							<div class="collapsible-body"><span>Dummy data</span></div>
+							<div class="collapsible-body"><span>A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the master branch to publish your changes.</span></div>
 						</li>
 						<li>
 							<div class="collapsible-header"><i class="material-icons">filter_drama</i>What is branch?</div>
